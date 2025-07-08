@@ -1,16 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh-CN"> <!-- 调整语言为中文 -->
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>零基础SQL自学网 | 程序员鱼皮出品</title> <!-- 优化标题，突出"零基础"和"出品" -->
-    <meta name="keywords" content="SQL,数据库,SQL教程,MySQL,SQL入门,数据分析,编程学习"/> <!-- 调整关键词顺序，突出入门 -->
-    <meta name="description" content="程序员鱼皮打造的免费SQL自学网站，零基础入门数据库，轻松掌握SQL语言，适合新手的编程学习平台"/> <!-- 细化描述，强调"零基础"和"新手友好" -->
+    <title>零基础SQL自学网 | 程序员鱼皮出品</title>
+    <meta name="keywords" content="SQL,数据库,SQL教程,MySQL,SQL入门,数据分析,编程学习"/>
+    <meta name="description" content="程序员鱼皮打造的免费SQL自学网站，零基础入门数据库，轻松掌握SQL语言，适合新手的编程学习平台"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <!-- 51.la 统计 -->
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    <script>LA.init({id:"K9BdYWGD6OgkCVzQ",ck:"K9BdYWGD6OgkCVzQ"})</script>
+    
+    <!-- 51.la 统计（修复加载问题） -->
+    <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>
+      window.onload = function() {
+        // 确保 LA 加载后再初始化
+        if (typeof LA !== 'undefined') {
+          LA.init({id:"K9BdYWGD6OgkCVzQ",ck:"K9BdYWGD6OgkCVzQ"});
+        } else {
+          console.warn('51.la SDK 加载失败，请检查网络或尝试本地部署 SDK');
+        }
+      };
+    </script>
+
     <!-- 百度搜索资源平台 -->
     <meta name="baidu-site-verification" content="codeva-VVCkFDxFF4" />
   </head>
